@@ -7,9 +7,11 @@ import {
   StatisticsAnna,
   ForbesList,
   CryptoHistory,
+  ForbesListYovbak 
 } from 'components';
-import data from 'data/data.json'
 
+import data from 'data/data.json'
+import forbes from 'data/forbes.json';
 import article from 'data/article.json';
 import {BlogCardVas} from '../../components/BlogCardVas/BlogCardVas';
 import { BlogCardTsapkov } from 'components/BlogCard/BlogCardTsapkov';
@@ -52,7 +54,7 @@ export const App = () => {
           Task 3
         </Heading>
         <ForbesList />
-
+       <ForbesListYovbak list={forbes} />
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
         </Heading>
