@@ -23,7 +23,7 @@ export const App = () => {
           Task 2
         </Heading>
         <Statistics />
-        <StatisticsAnna data={data} />
+        <StatisticsAnna title="Statistics Tsisar" data={data} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
