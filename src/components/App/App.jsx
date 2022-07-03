@@ -1,5 +1,5 @@
 import {
-  BlogCard,
+  BlogCardYurDov,
   Container,
   Section,
   Heading,
@@ -15,7 +15,7 @@ export const App = () => {
         <Heading marginBottom="50px" textAlign="center">
           Task 1
         </Heading>
-        <BlogCard />
+        <BlogCardYurDov />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
