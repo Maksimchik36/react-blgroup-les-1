@@ -1,5 +1,5 @@
 import {
-  BlogCard,
+  BlogCardYurDov,
   Container,
   Section,
   Heading,
@@ -23,6 +23,8 @@ export const App = () => {
         <Heading marginBottom="50px" textAlign="center">
           Task 1
         </Heading>
+        <BlogCardYurDov />
+        
         <BlogCardVas 
         poster={article.poster} 
         tag={article.tag} 
@@ -32,7 +34,9 @@ export const App = () => {
         avatar={article.avatar}
         postedAt={article.postedAt}
         />
+        
         <BlogCard />
+        
         <BlogCardTsapkov
           poster={article.poster}
           tag={article.tag}
@@ -42,7 +46,7 @@ export const App = () => {
           avatar={article.avatar}
           postedAt={article.postedAt}
         />
-
+        
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
