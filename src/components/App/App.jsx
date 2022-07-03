@@ -4,9 +4,11 @@ import {
   Section,
   Heading,
   Statistics,
+  StatisticsAnna,
   ForbesList,
   CryptoHistory,
 } from 'components';
+import data from 'data/data.json'
 
 export const App = () => {
   return (
@@ -21,6 +23,7 @@ export const App = () => {
           Task 2
         </Heading>
         <Statistics />
+        <StatisticsAnna data={data} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
