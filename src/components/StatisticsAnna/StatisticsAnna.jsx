@@ -4,11 +4,11 @@ import { StatisticsList, StatisticTitle } from './StatisticsAnna.styled';
 // import { MdPeople, MdOutlineProductionQuantityLimits } from 'react-icons/md';
 // import { GiTreeDoor } from 'react-icons/gi';
 
-export const StatisticsAnna = ({ data }) => {
+export const StatisticsAnna = ({title, data }) => {
 	return (
 		<>
-			<StatisticTitle>Main Statistics</StatisticTitle>
-
+			<StatisticTitle>{title}</StatisticTitle>
+			
 			<StatisticsList>
 				{data.map(dataEl => (
 					<StatisticItemAnna
