@@ -46,7 +46,7 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
-        
+
         <Statistics />
         <StatisticsAnna title="Statistics Tsisar" data={data} />
 
