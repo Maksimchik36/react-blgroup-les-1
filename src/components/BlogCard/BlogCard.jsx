@@ -40,3 +40,40 @@ BlogCardYurDov.propTypes = {
   avatar:PropTypes.string,
   postedAt:PropTypes.string,
 }
+
+
+export const BlogCard = (props) => {
+  const {poster, tag, title, description, userName, avatar, postedAt} = props;
+  return (<Card className='Card'>
+    <CardHeader className='CardHeader'>
+      <CardPoster className='CardPoster'
+        src={poster}
+        alt={title}
+      />
+    </CardHeader>
+    <CardBody className='CardBody'>
+      <Tag className='Tag'>{tag}</Tag>
+      <CardTitle className='CardTitle'>{title}</CardTitle>
+      <CardText className='CardText'>{description}</CardText>
+    </CardBody>
+    <CardFooter className='CardFooter'>
+      <UserBox className='UserBox'>
+        <Avatar className='Avatar' src={avatar} alt={userName} />
+        <UserInfo className='UserInfo'>
+          <UserName className='UserName'>{userName}</UserName>
+          <Date className='Date'>{postedAt}</Date>
+        </UserInfo>
+      </UserBox>
+    </CardFooter>
+  </Card>)
+}
+
+BlogCard.propTypes = {
+  poster: PropTypes.string,
+  tag: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  userName: PropTypes.string,
+  avatar: PropTypes.string,
+  postedAt: PropTypes.string,
+}

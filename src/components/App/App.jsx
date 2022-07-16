@@ -9,10 +9,11 @@ import {
   CryptoHistory,
   ForbesListYovbak 
 } from 'components';
+import article from 'data/article.json'
 
 import data from 'data/data.json'
 import forbes from 'data/forbes.json';
-import article from 'data/article.json';
+import {BlogCard} from '../BlogCard/BlogCard'
 import {BlogCardVas} from '../../components/BlogCardVas/BlogCardVas';
 import { BlogCardTsapkov } from 'components/BlogCard/BlogCardTsapkov';
 
@@ -23,6 +24,7 @@ export const App = () => {
         <Heading marginBottom="50px" textAlign="center">
           Task 1
         </Heading>
+
         <BlogCardYurDov />
         
         <BlogCardVas 
@@ -34,19 +36,25 @@ export const App = () => {
         avatar={article.avatar}
         postedAt={article.postedAt}
         />
-        
-        <BlogCard />
-        
+                
         <BlogCardTsapkov
           poster={article.poster}
           tag={article.tag}
           title={article.title}
           description={article.description}
-          userName={article.name}
+          name={article.name}
           avatar={article.avatar}
           postedAt={article.postedAt}
         />
         
+        <BlogCard poster={article.poster}
+  tag={article.tag}
+  title={article.title}
+  description={article.description}
+  userName={article.name}
+  avatar={article.avatar}
+  postedAt={article.postedAt}/>
+
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>

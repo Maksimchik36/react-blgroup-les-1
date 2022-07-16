@@ -22,7 +22,7 @@ export const BlogCardTsapkov = ({
   description,
   name,
   avatar,
-  posteAt,
+  postedAt,
 }) => {
   return (
     <Card>
@@ -39,7 +39,7 @@ export const BlogCardTsapkov = ({
           <Avatar src={avatar} alt="Jane Doe" />
           <UserInfo>
             <UserName>{name}</UserName>
-            <Date>{posteAt}</Date>
+            <Date>{postedAt}</Date>
           </UserInfo>
         </UserBox>
       </CardFooter>
@@ -49,7 +49,7 @@ export const BlogCardTsapkov = ({
 
 BlogCardTsapkov.propTypes = {
   name: PropTypes.string.isRequired,
-  posteAt: PropTypes.string.isRequired,
+  postedAt: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
