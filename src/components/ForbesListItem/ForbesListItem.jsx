@@ -4,20 +4,15 @@ import { ForbesItem, Avatar, Name, Capital } from './ForbesListItem.styled';
 
 import { theme } from 'styles/theme';
 
-export const ForbesListItem = () => {
+export const ForbesListItem = ({ list }) => {
   return (
-    <div>
-      <ForbesItem>
-        <Avatar
-          src="https://randomuser.me/api/portraits/men/32.jpg"
-          alt="Mark Zuckerberg"
-        />
-        <Name>Mark Zuckerberg</Name>
-        <Capital>
-          35.7 <BiDollarCircle color={theme.colors.accent} size={22} />
-          {/* Тут має бути необхідна іконка зміни статку */}
-        </Capital>
-      </ForbesItem>
-    </div>
+    <ForbesItem>
+      <Avatar src={list.avatar} alt="{list.name}" />
+      <Name>{list.name}</Name>
+      <Capital>
+        {list.capital} <BiDollarCircle color={theme.colors.accent} size={22} />
+        {list.isIncrease === true ? FcBullish : FcBearish}
+      </Capital>
+    </ForbesItem>
   );
 };
